@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brokerfy Commercial Insurance Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <img src="Provida  Brokerfy Social Media Resources  (4).svg" alt="Brokerfy logo" />
+            <div>
+              <p class="eyebrow">Commercial coverage marketplace</p>
+              <h1>Compare commercial insurance options in minutes.</h1>
+            </div>
+          </div>
+          <a class="ghost-button" href="#intake-form">Start intake</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section>
+            <p class="lead">
+              Help business owners evaluate tailored quotes across general liability, workers' comp,
+              BOP, cyber, professional liability, and commercial auto from one guided dashboard.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#quotes">View sample comparisons</a>
+              <a class="secondary-button" href="#intake-form">Complete intake form</a>
+            </div>
+            <ul class="hero-stats">
+              <li>
+                <strong>12+</strong>
+                <span>carrier-ready data points organized by class code and exposure</span>
+              </li>
+              <li>
+                <strong>3</strong>
+                <span>sample quote scenarios for side-by-side evaluation</span>
+              </li>
+              <li>
+                <strong>1</strong>
+                <span>intake workflow for fast broker follow-up</span>
+              </li>
+            </ul>
+          </section>
+
+          <aside class="hero-card">
+            <p class="hero-card-label">Best for growing businesses</p>
+            <h2>Broker snapshot</h2>
+            <div class="snapshot-list">
+              <div>
+                <span>Target business</span>
+                <strong>Contractors, retail, professional services</strong>
+              </div>
+              <div>
+                <span>Lines packaged</span>
+                <strong>GL, Property, Auto, Cyber, EPLI</strong>
+              </div>
+              <div>
+                <span>Estimated turnaround</span>
+                <strong>Same day for eligible classes</strong>
+              </div>
+            </div>
+            <div class="risk-pill-row">
+              <span class="risk-pill active">Low hazard</span>
+              <span class="risk-pill">Mid-market</span>
+              <span class="risk-pill">Multi-state</span>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" id="quotes">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Quote comparison</p>
+              <h2>Three commercial insurance packages, one clear decision.</h2>
+            </div>
+            <p>
+              Compare premiums, deductibles, appetite, and included endorsements to match the right
+              policy structure to each insured's risk profile.
+            </p>
+          </div>
+
+          <div class="comparison-toolbar">
+            <label>
+              Business profile
+              <select id="business-filter">
+                <option value="all">All business types</option>
+                <option value="contractor">Contractor</option>
+                <option value="retail">Retail</option>
+                <option value="professional">Professional services</option>
+              </select>
+            </label>
+            <label>
+              Coverage focus
+              <select id="coverage-filter">
+                <option value="all">All coverage bundles</option>
+                <option value="liability">Liability-led</option>
+                <option value="property">Property-led</option>
+                <option value="cyber">Cyber-led</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="quote-grid" id="quote-grid"></div>
+        </section>
+
+        <section class="section insights">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Why this app helps</p>
+              <h2>Designed for faster commercial submissions.</h2>
+            </div>
+          </div>
+          <div class="insight-grid">
+            <article>
+              <h3>Standardized appetite view</h3>
+              <p>
+                Highlight preferred classes, minimum premiums, and underwriting notes before moving
+                an account into the market.
+              </p>
+            </article>
+            <article>
+              <h3>Coverage gap visibility</h3>
+              <p>
+                Show exclusions, sublimits, and missing endorsements so the insured understands the
+                true trade-offs between quotes.
+              </p>
+            </article>
+            <article>
+              <h3>Clean intake handoff</h3>
+              <p>
+                Capture exposures, payroll, revenue, vehicles, and claims history in one broker-ready
+                submission intake form.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section intake-section" id="intake-form">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Broker intake</p>
+              <h2>Collect the details needed to market the account.</h2>
+            </div>
+            <p>
+              This intake form is structured for small to mid-sized commercial risks and surfaces the
+              underwriting details a broker needs before requesting indications or bindable terms.
+            </p>
+          </div>
+
+          <form id="submission-form" class="intake-form">
+            <div class="form-grid">
+              <label>
+                Business name
+                <input type="text" name="businessName" placeholder="Atlas Builders LLC" required />
+              </label>
+              <label>
+                Contact name
+                <input type="text" name="contactName" placeholder="Jordan Lee" required />
+              </label>
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="jordan@atlasbuilders.com" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="(555) 010-2040" required />
+              </label>
+              <label>
+                Industry
+                <select name="industry" required>
+                  <option value="">Select industry</option>
+                  <option>Contractor</option>
+                  <option>Retail</option>
+                  <option>Professional services</option>
+                  <option>Manufacturing</option>
+                  <option>Hospitality</option>
+                  <option>Transportation</option>
+                </select>
+              </label>
+              <label>
+                States of operation
+                <input type="text" name="states" placeholder="CA, NV, AZ" required />
+              </label>
+              <label>
+                Annual revenue
+                <input type="number" name="revenue" placeholder="2500000" min="0" required />
+              </label>
+              <label>
+                Annual payroll
+                <input type="number" name="payroll" placeholder="900000" min="0" required />
+              </label>
+              <label>
+                Number of employees
+                <input type="number" name="employees" placeholder="18" min="1" required />
+              </label>
+              <label>
+                Years in business
+                <input type="number" name="yearsInBusiness" placeholder="7" min="0" required />
+              </label>
+              <label>
+                Desired effective date
+                <input type="date" name="effectiveDate" required />
+              </label>
+              <label>
+                Claims in last 5 years
+                <select name="claimsHistory" required>
+                  <option value="">Select claims history</option>
+                  <option>0 claims</option>
+                  <option>1 claim</option>
+                  <option>2-3 claims</option>
+                  <option>4+ claims</option>
+                </select>
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>Requested coverage lines</legend>
+              <div class="checkbox-grid">
+                <label><input type="checkbox" name="coverages" value="General Liability" /> General Liability</label>
+                <label><input type="checkbox" name="coverages" value="Business Owner's Policy" /> Business Owner's Policy</label>
+                <label><input type="checkbox" name="coverages" value="Workers' Compensation" /> Workers' Compensation</label>
+                <label><input type="checkbox" name="coverages" value="Commercial Auto" /> Commercial Auto</label>
+                <label><input type="checkbox" name="coverages" value="Cyber Liability" /> Cyber Liability</label>
+                <label><input type="checkbox" name="coverages" value="Professional Liability" /> Professional Liability</label>
+                <label><input type="checkbox" name="coverages" value="Umbrella / Excess" /> Umbrella / Excess</label>
+                <label><input type="checkbox" name="coverages" value="Employment Practices Liability" /> Employment Practices Liability</label>
+              </div>
+            </fieldset>
+
+            <div class="form-grid">
+              <label class="full-width">
+                Operations description
+                <textarea
+                  name="operations"
+                  rows="4"
+                  placeholder="Describe the business operations, key contracts, products/services, and any subcontracted work."
+                  required
+                ></textarea>
+              </label>
+              <label>
+                Number of owned vehicles
+                <input type="number" name="vehicles" placeholder="6" min="0" />
+              </label>
+              <label>
+                Total insurable property value
+                <input type="number" name="propertyValue" placeholder="750000" min="0" />
+              </label>
+              <label class="full-width">
+                Notes for underwriting
+                <textarea
+                  name="notes"
+                  rows="4"
+                  placeholder="List safety controls, prior cancellations, large contracts, or additional insured requirements."
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="primary-button">Generate intake summary</button>
+              <button type="reset" class="secondary-button muted-button">Clear form</button>
+            </div>
+          </form>
+
+          <aside class="submission-summary" id="submission-summary">
+            <div>
+              <p class="eyebrow">Submission summary</p>
+              <h3>Your intake summary will appear here.</h3>
+              <p>
+                Complete the form to generate a concise overview that a broker or account manager can
+                use for the next step in the quoting workflow.
+              </p>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
